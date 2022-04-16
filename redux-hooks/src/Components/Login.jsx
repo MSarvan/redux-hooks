@@ -1,13 +1,18 @@
 import { useState } from "react";
+import { loginData } from "../Redux/Login/action"; 
+import { useDispatch } from "react-redux";
 
 const Login = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+  const dispatch = useDispatch();
 
   const handleLogin = () => {
-      const userdata = {username, password};
-      fetch(`http://localhost:3000`)
-  }
+
+    const userdata = { username, password };
+    dispatch(loginData(userdata));
+
+  };
 
   return (
     <div>

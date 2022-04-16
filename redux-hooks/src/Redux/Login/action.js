@@ -13,3 +13,20 @@ export const loginSuccess = (payload) => ({
 export const loginFailure = () => ({
     type: LOGIN_FAILURE
 })
+
+export const loginData = () => (dispatch) => ({
+
+    dispatch(loginLoading())
+
+    // fetch(`https://masai-api-mocker.herokuapp.com/auth/login`, {
+    //   method: "POST",
+    //   body: JSON.stringify(userdata),
+    //   headers: {
+    //     "Content-Type": "application/json",
+    //   },
+    // })
+    //   .then((res) => res.json())
+    //   .then((res) => loginSuccess(res))
+    //   .catch((err) => loginFailure(err));
+
+})

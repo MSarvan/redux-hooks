@@ -9,7 +9,7 @@ const PrivateRoute = ({ isAuthenticated, children }) => {
 };
 
 function App() {
-  const isAuthenticated = true; // this needs to update from the redux part
+  const isAuthenticated = false; // this needs to update from the redux part
 
   return (
     <div className="App">

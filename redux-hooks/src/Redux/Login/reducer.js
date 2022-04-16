@@ -8,3 +8,9 @@ const initState = {
     isAuthenticated: false
 }
 
+const LoginReducer = (state = initState, {type, payload}) => { // action destructured as type, payload
+    switch(type)
+    {
+        case 
+    }
+}
